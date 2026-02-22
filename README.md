@@ -13,6 +13,10 @@ Code prevents false alarms due to patient movement artifact or sensor problems b
 
 - <b>VS Code</b>
 
+<img width="1044" height="700" alt="RR Project" src="https://github.com/user-attachments/assets/f406f8f4-7e21-4015-97bb-2be1a4fc4b2a" />
+
+
+
 <!--
  ```diff
 - text in red
