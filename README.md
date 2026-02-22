@@ -14,7 +14,8 @@ Code prevents false alarms due to patient movement artifact or sensor problems b
 - <b>VS Code</b>
 
 
-Utlizing variables I created the patient location, alarm parameters, and the patient's vital signs. Then I utilized simple if, elif, else statements along with f-strings to achieve the desired output notifications using the print function. All conditions are based off the patient's vital sign readings.
+Utlizing variables I created the patient location, alarm parameters, and the patient's vital signs. Then I utilized simple if, elif, else statements along with f-strings to achieve the desired output notifications using the print function. All conditions are based off the patient's vital sign readings. Of course, the room number can be ammended. The alarm parameters are based off clinical norms, but can also be patient dependent, and also changed.
+
 <img width="1044" height="700" alt="RR Project" src="https://github.com/user-attachments/assets/f406f8f4-7e21-4015-97bb-2be1a4fc4b2a" />
 
 
