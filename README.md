@@ -17,7 +17,7 @@ Project consists of a simple PowerShell script that walks the user through "zero
 
 <p align="center">
 Launch the utility: <br/>
-<img src="(https://imgur.com/a/rO8wnVC)" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/a/rO8wnVC" height="80%" width="80%" alt="Respiratory Rate - Movement Artifact"/>
 <br />
 
 <!--
