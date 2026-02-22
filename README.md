@@ -1,7 +1,7 @@
 <h1>Respiratory Rate - Movement Artifact</h1>
 
 <h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
+Code prevents false alarms due to patient movement artifact or innacurate readings by comparing oxygenation status of patient before notifying clinician. In other words, a low respiratory rate with a correlating low oxygenation will trigger a notification, but a low respiratory rate alone will not. This can be used as an early warning system for apneic episodes or cardiopulmonary arrest while mitigating false alarms due to patient movement or a insecure sensor. All high respiratory rate notifications will notify despite oxygen level. This is because high respiratory rates can be associated with low or high oxygenation status depending on the situation.
 <br />
 
 
