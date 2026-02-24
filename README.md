@@ -1,7 +1,7 @@
 <h1>Respiratory Rate - Movement Artifact</h1>
 
 <h2>Description</h2>
-Code prevents false alarms due to patient movement artifact or sensor problems by comparing oxygenation status to respiratory rate of patient before notifying clinician of low respiratory rate. In other words, a low respiratory rate with a correlating low oxygenation will trigger a notification, but a low respiratory rate alone will not. This can be used as an early warning system for apneic episodes or cardiopulmonary arrest while mitigating false alarms due to patient movement or a insecure sensor. Thus, improving clincian efficiency. All high respiratory rate notifications will notify despite oxygen level. This is because high respiratory rates can be associated with low or high oxygenation status depending on the situation.
+Code prevents false alarms due to patient movement artifact or sensor problems by comparing oxygenation status to respiratory rate of patient before notifying clinician of low respiratory rate. In other words, a low respiratory rate with a correlating low oxygenation will trigger a notification, but a low respiratory rate alone will not. This can be used as an early warning system for apneic episodes or cardiopulmonary arrest while mitigating false alarms due to patient movement or a insecure sensor. Thus, improving clincian efficiency and reducing alarm fatigue. All high respiratory rate notifications will notify despite oxygen level. This is because high respiratory rates can be associated with low or high oxygenation status depending on the situation.
 <br />
 
 
@@ -14,9 +14,8 @@ Code prevents false alarms due to patient movement artifact or sensor problems b
 - <b>VS Code</b>
 
 
-Utlizing variables I created the patient location, alarm parameters, and the patient's vital signs. Then I utilized simple if, elif, else statements along with f-strings to achieve the desired output notifications using the print function. All conditions are based off the patient's vital sign readings. Of course, the room number can be ammended. The alarm parameters are based off clinical norms, but can also be patient dependent, and also changed.
-
 <h2>Overview</h2>
+Utlizing variables I created the patient location, alarm parameters, and the patient's vital signs. Then I utilized an infinate loop, simple if elif statements, along with f-strings to achieve the desired output notifications using the print function. All conditions are based off the patient's vital sign readings. Of course, the room number can be ammended. The alarm parameters are based off clinical norms, but are customizable depending on patient.
 <img width="1514" height="751" alt="Overview RR 5" src="https://github.com/user-attachments/assets/9f85f980-136c-4b0d-abb2-6b93c4594fe9" />
 
 <h2>Walkthrough</h2>
@@ -36,7 +35,9 @@ If-elif checks – high Resp_Rate always alerts; low Resp_Rate requires SpO2 con
 <img width="1518" height="334" alt="logic RR 4" src="https://github.com/user-attachments/assets/e5dabc33-77ff-4afb-8faa-6ba4e3851962" />
 
 <b>Why This Reduces False Alarms:</b>
-
+- Isolated Resp-Rate = 6 with SpO2 = 98% >>> no low-RR alarm (likely artifact).
+- Resp_Rate = 6 with SpO2 = 84% >>> triggers dangerously low RR alert (likely real hypoventilation).
+- Any SpO2 <90% alerts independently (hypoxemia is dangerous even with normal RR).
 
 
 
