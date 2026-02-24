@@ -16,7 +16,27 @@ Code prevents false alarms due to patient movement artifact or sensor problems b
 
 Utlizing variables I created the patient location, alarm parameters, and the patient's vital signs. Then I utilized simple if, elif, else statements along with f-strings to achieve the desired output notifications using the print function. All conditions are based off the patient's vital sign readings. Of course, the room number can be ammended. The alarm parameters are based off clinical norms, but can also be patient dependent, and also changed.
 
-<img width="1044" height="700" alt="RR Project" src="https://github.com/user-attachments/assets/f406f8f4-7e21-4015-97bb-2be1a4fc4b2a" />
+<h2>Overview</h2>
+<img width="1514" height="751" alt="Overview RR 5" src="https://github.com/user-attachments/assets/9f85f980-136c-4b0d-abb2-6b93c4594fe9" />
+
+<h2>Walkthrough</h2>
+<b>1.	Set Up & Alarm/Notification Thresholds: </b>
+Normal Respiratory Rate (RR) is typically 12-20 breaths/min. Alarm parameters can be tailored to system or patient.
+<img width="1512" height="268" alt="setup RR 1" src="https://github.com/user-attachments/assets/a2468c17-e2d4-49c9-aaff-c12900edc517" />
+
+<b>2.	Startup Console Message for Continuous Monitoring: </b>
+<img width="1517" height="74" alt="Startup RR 2" src="https://github.com/user-attachments/assets/74222671-7179-4b10-8385-59dd0f2c1567" />
+
+<b>3.	Infinite Monitoring Loop: </b>
+Simulated patient vital readings provide a means for testing. Replace later with real sensor input from pulse oximeter or radar device.
+<img width="1499" height="113" alt="Loop RR 3" src="https://github.com/user-attachments/assets/e57c171a-e92c-4c4f-8ecb-e94c08e9cb36" />
+
+<b>4.	Alarm Logic:</b>
+If-elif checks – high Resp_Rate always alerts; low Resp_Rate requires SpO2 confirmation. Utilizing imported time and time.sleep, patient readings refresh every 5 seconds.
+<img width="1518" height="334" alt="logic RR 4" src="https://github.com/user-attachments/assets/e5dabc33-77ff-4afb-8faa-6ba4e3851962" />
+
+<b>Why This Reduces False Alarms:</b>
+
 
 
 
